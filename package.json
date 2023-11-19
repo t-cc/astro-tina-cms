@@ -3,9 +3,9 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
+    "dev": "tinacms dev -c 'astro dev'",
+    "start": "tinacms dev -c 'astro dev'",
+    "build": "tinacms build && astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -13,6 +13,11 @@
     "@astrojs/check": "^0.3.1",
     "@astrojs/cloudflare": "^7.7.1",
     "astro": "^3.5.5",
+    "tinacms": "^1.5.24",
     "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.5.33",
+    "@types/node": "^20.9.2"
   }
 }
